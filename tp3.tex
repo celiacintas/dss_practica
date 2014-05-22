@@ -1,0 +1,90 @@
+\documentclass{article}
+\textwidth=14cm
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+%\usepackage{pythonhighlight}
+\usepackage[pdftex]{hyperref}
+\usepackage{graphicx} % InclusiÃ³n de imÃ¡genes
+
+
+\hypersetup{colorlinks=true,linkcolor=black}
+
+%%%%%scabecera
+\pagestyle{fancy} % seleccionamos un estilo
+\lhead{UNPSJB } % texto izquierda de la cabecera
+%\chead{TEXTO} % texto centro de la cabecera
+\chead{Sistemas de Soporte para la Toma de Decisiones}% \includegraphics[width=2cm]{./unpsjb.png}} % nÃºmero de pÃ¡gina a la derecha
+%\lfoot{TEXTO} % texto izquierda del pie
+\rhead{\includegraphics[scale = 0.15]{Imagenes/unpsjb.png}} % imagen centro del pie
+%\rfoot{TEXTO} % texto derecha del pie
+\renewcommand{\headrulewidth}{0.4pt} % grosor de la lÃ­nea de la cabecera
+\renewcommand{\footrulewidth}{0.4pt} % grosor de la lÃ­nea del pie
+
+\begin{document}
+\begin{large}
+\title{\bf {Trabajo Práctico Nro 3 - Sistemas de Soporte para la Toma de Decisiones.}}
+\end{large}
+\date{2013 - UNPSJB\\[1cm]\includegraphics[scale = 0.5]{Imagenes/unpsjb.png}}
+
+\maketitle
+\newpage
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[scale=0.50]{./Imagenes/graf1.png}
+%\label{fig:graf}
+%\caption{}
+%\end{center}
+%\end{figure}
+%Poner Imagen aqui
+
+%Data warehousing logical design
+%Mirjana Mazuran
+%mazuran@elet.polimi.it
+%December 15, 2009
+Alguna intro ...
+
+\section{Diseño Lógico e Implementación de Data Warehouse}
+\begin{enumerate}
+	\item A continuación enumeramos algunas empresas a las que se les debe diseñar un DW, ya sea bajo un esquema \emph{estrella} o \emph{copo de nieve}, en ambos casos detalle dimensiones, medidas y hechos utilizados:
+\begin{description}
+    \item[Empresa de Vinos] Venta \emph{Online} de Vinos, esta empresa necesita que se diseñe 
+    un DW para registrar la cantidad y ventas de sus vinos a sus clientes.
+    Parte de la base de datos actual esta compuesta por las siguientes tablas:
+    \begin{description}
+	    \item [CUSTOMER] (Code, Name, Address, Phone, BDay, Gender)
+	    \item [WINE] (Code, Name, Type, Vintage, BottlePrice, CasePrice, Class)
+	    \item [CLASS] (Code, Name, Region)
+	    \item [TIME] (TimeStamp, Date, Year)
+	    \item [ORDER] (Customer, Wine, Time, nrBottles, nrCases)
+	\end{description}
+  Estas tablas representan las entidades principales de un ER, por lo que es necesario derivar las relaciones entre ellas para poder diseñar correctamente el DW.
+  \item[Inmobiliaria] En este caso deseamos darle al Gerente Principal una vista general del negocio, en terminos de cuales son las propiedades que la inmobiliaria maneja y el seguimiento del trabajo de cada Agente dentro de la empresa. Nuestra Inmobiliaria cuenta con las siguientes tablas en su base de datos.
+  \begin{description}
+  		\item[OWNER] (IDOwner, Name, Surname, Address, City, Phone)
+		\item[ESTATE](IDEstate, IDOwner, Category, Area, City, Province, Rooms, Bedrooms, Garage, Meters)
+		\item[CUSTOMER] (IDCust, Name, Surname, Budget, Address, City, Phone)
+		\item[AGENT] (IDAgent, Name, Surname, Office, Address, City, Phone)
+		\item[AGENDA] (IDAgent, Data, Hour, IDEstate, ClientName)
+		\item[VISIT] (IDEstate,IDAgent, IDCust, Date, Duration)
+		\item[SALE] (IDEstate,IDAgent, IDCust, Date, AgreedPrice, Status)
+		\item[RENT] (IDEstate,IDAgent, IDCust, Date, Price, Status, Time)
+  \end{description}
+  Luego de realizado el diseño del DW realice las siguientes consultas SQL:
+  \begin{itemize}
+	\item ¿Qué tipo de propiedad se vendió por el precio más alto con respecto a cada ciudad
+y meses?
+	\item ¿Quién ha comprado un piso con el precio más alto con respecto a cada mes?
+	\item ¿Cuál es la duración media de visitas en las propiedades de cada categoría?
+  \end{itemize}
+\end{description}
+\item \textbf{Otro ejercicio es darle el una db básica (mediante un script) y
+      mostrarle una tabla (resultado) con información que se puede
+      obtener mediante cambios pertinentes en el archivo que les
+      damos, la idea es que nos den estos cambios necesarios para tener
+      esa información como resultado.} esto tenemos que decidir lenguajes y base de datos .. creo que Python con PostgreSQL puede ir bien .. porque los chicos ya vieron esas dos herramientas .. pero no programe nada por si querias utilizar otra DB o tenias otro lenguaje en mente.
+      El Script que tengo en mente solo crea la base de datos con sus respectivas tablas y relaciones
+\item \textbf{Podremos trabajar con la gente de aplicaciones WEB?, si es asi podriamos generar una db con datos de X sitio mediante web scraping .. si se complica mucho .. busco un sitio X con datos sencillos y hacemos un micro tutorial sin teoria de como tomar datos de esa pagina web y le damos a todos los chicos el mismo script para tomar los datos y eso que lo lleven a su DW.}
+\end{enumerate}
+\end{document}

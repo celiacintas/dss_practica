@@ -1,0 +1,83 @@
+\documentclass{article}
+\textwidth=14cm
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+%\usepackage{pythonhighlight}
+\usepackage[pdftex]{hyperref}
+\usepackage{graphicx} % InclusiÃ³n de imÃ¡genes
+
+
+\hypersetup{colorlinks=true,linkcolor=black}
+
+%%%%%scabecera
+\pagestyle{fancy} % seleccionamos un estilo
+\lhead{UNPSJB } % texto izquierda de la cabecera
+%\chead{TEXTO} % texto centro de la cabecera
+\chead{Sistemas de Soporte para la Toma de Decisiones}% \includegraphics[width=2cm]{./unpsjb.png}} % nÃºmero de pÃ¡gina a la derecha
+%\lfoot{TEXTO} % texto izquierda del pie
+\rhead{\includegraphics[scale = 0.15]{Imagenes/unpsjb.png}} % imagen centro del pie
+%\rfoot{TEXTO} % texto derecha del pie
+\renewcommand{\headrulewidth}{0.4pt} % grosor de la lÃ­nea de la cabecera
+\renewcommand{\footrulewidth}{0.4pt} % grosor de la lÃ­nea del pie
+
+\begin{document}
+\begin{large}
+\title{\bf {Trabajo Práctico Nro 6 - Sistemas de Soporte para la Toma de Decisiones.}}
+\end{large}
+\date{2013 - UNPSJB\\[1cm]\includegraphics[scale = 0.5]{Imagenes/unpsjb.png}}
+
+\maketitle
+\newpage
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[scale=0.50]{./Imagenes/graf1.png}
+%\label{fig:graf}
+%\caption{}
+%\end{center}
+%\end{figure}
+%Poner Imagen aqui
+
+%Data warehousing logical design
+%Mirjana Mazuran
+%mazuran@elet.polimi.it
+
+Día a día se generan más datos, entenderlos es crucial para poder tomar decisiones acertadas y la
+visualización nos permite analizarlos de forma rápida, intuituva y precisa. \textbf{MEJORAR LA INTRO}
+
+\section{Visualización}
+\begin{enumerate}
+\item Enumere para que tareas es util la visualización computacional.
+\item Cuando nuestra herramienta provee Exploración Visual de Datos, qué características son importantes?
+%\item Qué diferencias encontramos a la hora de visualizar datos científicos visualización de información?
+\item Gráficas de negocio es lo mismo que la visualización de información? Justifique.
+\item Cuál es el $pipe$ clásico a la hora de visualizar datos?
+\end{enumerate}
+\section{Visualización Pasiva}
+\begin{enumerate}
+\item Adquiera información de los seguidores de $X$ usuario en \emph{Twitter} y realize las siguientes actividades:
+\begin{itemize}
+	\item Clasifique la adquisición de los datos.
+	\item De todos los datos, tome un subconjunto de seguidores del usuario $X$ que cumplan con la condición de al menos 10 seguidores.
+	\item Dependiendo de la cantidad de seguidores que tenga $Y$ seguidor, asignele un color.
+	\item Eliga el tipo de gráfico que desea utlizar, justifique y visualice.
+\end{itemize}
+\item Teniendo en cuenta los pasos realizados en el punto anterior (Adquisición, preparación, estructuración pre visualización y visualización). Tome $n$ con $n > 10$  coordenadas geográficas y grafíquelas en un mapa.
+\item Descargue datos SRTM y visualize. Detalle los pasos realizados. 
+\item Descargue los datos del Registro de Accidentes de Tránsito de Bahia Blanca, y visualice de la mejor forma posible todos sus datos (fecha, tipo de evento, domicilio, localidad, latitud, longitud)
+\end{enumerate}
+
+\section{Visualización Activa}
+
+\begin{enumerate}
+	\item Agregue al item anterior de Registro de Accidentes de Transito la posibilidad de ocultar o mostrar ciertos datos, muestre valores totales y realize filtros (ver información por fecha, tipo de accidente, zona o combinaciones de esta).
+	\item Cargue todos los datos de Compras Municipales de Gobierno Abierto, que filtros y consultas habilitaría para ver en que tópicos se invirtió más dinero y cuales fueron los proovedores más beneficiados.
+\end{enumerate}
+
+\section{Steering Vis}
+\textbf{Queda para tp final .. ver ipython notebook para links y bibliotecas}
+
+
+\end{document}
+

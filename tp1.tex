@@ -1,0 +1,129 @@
+\documentclass{article}
+\textwidth=14cm
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+%\usepackage{pythonhighlight}
+\usepackage[pdftex]{hyperref}
+\usepackage{graphicx} % InclusiÃ³n de imÃ¡genes
+
+
+\hypersetup{colorlinks=true,linkcolor=black}
+
+%%%%%scabecera
+\pagestyle{fancy} % seleccionamos un estilo
+\lhead{UNPSJB } % texto izquierda de la cabecera
+%\chead{TEXTO} % texto centro de la cabecera
+\chead{Sistemas de Soporte para la Toma de Decisiones}% \includegraphics[width=2cm]{./unpsjb.png}} % nÃºmero de pÃ¡gina a la derecha
+%\lfoot{TEXTO} % texto izquierda del pie
+\rhead{\includegraphics[scale = 0.15]{Imagenes/unpsjb.png}} % imagen centro del pie
+%\rfoot{TEXTO} % texto derecha del pie
+\renewcommand{\headrulewidth}{0.4pt} % grosor de la lÃ­nea de la cabecera
+\renewcommand{\footrulewidth}{0.4pt} % grosor de la lÃ­nea del pie
+
+\begin{document}
+\begin{large}
+\title{\bf {Trabajo Práctico Nro 1 - Las Organizaciones y las Decisiones.}}
+\end{large}
+\date{2013 - UNPSJB\\[1cm]\includegraphics[scale = 0.5]{Imagenes/unpsjb.png}}
+
+\maketitle
+\newpage
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[scale=0.50]{./Imagenes/graf1.png}
+%\label{fig:graf}
+%\caption{}
+%\end{center}
+%\end{figure}
+%Poner Imagen aqui
+
+%Data warehousing logical design
+%Mirjana Mazuran
+%mazuran@elet.polimi.it
+%December 15, 2009
+
+La toma de decisiones en las empresas solía ser responsabilidad exclusiva de la administración. En la actualidad empleados de niveles inferiores son responsables de algunas decisiones, a medida que los sistemas de información ponen esta a disposición de los niveles inferiores de la empresa ¿Cómo se realiza la toma de decisiones de las empresas y en organizaciones?¿Cómo identificamos las diferentes decisiones y sus tipos?
+
+\section{Tipos de Decisiones}
+A continuación enumeramos algunas decisiones típicas:
+\begin{itemize}
+    \item Aprobación de presupuestos de capital.
+    \item Reabastecer el inventario.
+    \item Decidir $X$ meta a largo plazo.
+    \item Diseño de plan de \emph{Marketing}.
+    \item Desarrollo de presuspuesto de $Y$ departamento.
+    \item Ofrecer créditos a clientes.
+    \item Diseño de sitio Web.
+    \item Determinar ofertas especiales para cierto segmento del mercado.
+\end{itemize}
+\begin{enumerate}
+    \item Clasifique las distintas decisiones en sus tipos correspondientes\footnote{No estructuradas, estructuradas, semiestructuradas}.
+    \item El tipo de decisión esta siempre relacionado con los niveles de una organización? Justifique.
+\end{enumerate}
+
+\section{Roles Administrativos}
+A continuación enumeramos acciones clásicas del rol administrativo:
+\begin{itemize}
+    \item Determinación de calendarios. %rol decision
+    \item Planeamiento de presupuestos. % rol decision
+    \item Reuniónes periódicas con Clientes y Proveedores. % rol interpersonales
+    \item Creación de Juntas de consejo. % rol informativo
+    \item Revisión de estrategias. % rol decision
+    \item Sesiones de revisión y generación de boletines. %rol informativo
+    \item Negociación en conflictos. % rol decision
+    \item Administración  y actualización de contactos en orden de relevancia. %rol informativo
+    \item Organización de eventos sociales, motivación de empleados. % rol interpersonales
+\end{itemize}
+\begin{enumerate}
+    \item Identifique e indique que tipo de rol\footnote{Roles Interpersonales, Roles Informativos, Roles de Decisión} estaría realizando cada una de estas acciones.
+    \item Enumere ejemplos de sistemas de apoyo para cada rol.
+\end{enumerate}
+
+\section{Caso de Estudio}
+
+\begin{enumerate}
+    \item Del siguiente caso de estudio evalue:
+    \begin{enumerate}
+        \item Rol que toma el director general.
+        \item Cuales son las decisiones que aparecen en este caso y cual es su clasificación?
+    \end{enumerate}
+    \item Enumere ventajas operativas y estratégicas que puede obtener la empresa \emph{Transportes Veracruzanos}
+con base en el desarrollo de sus sistemas de decisiones o procesos decisorios.
+    \item Describa que sistemas de decisiones desarrollaría para ayudar a la toma de decisiones enumeradas anteriormente.
+
+\end{enumerate}
+La empresa \emph{Transportes Veracruzanos}, se dedica al transporte de
+carga pesada. La empresa cuenta con oficinas autónomas en las ciudades de México, Poza
+Rica, Minatitlán y Puebla. El operativo reside en Veracruz, donde está la dirección general
+y las aéreas de apoyo como la gerencia de operaciones, mantenimiento, investigación y
+desarrollo, la contraloría general y la gerencia de recursos humanos. Estas divisiones se
+encargan de definir las estrategias de negocio tanto para el corporativo como para las
+oficinas distantes. Entre los sistemas que se han implantado en cada una de las oficinas se
+pueden mencionar el control de tráfico, el sistema de mantenimiento a unidades, control de
+llantas, el sistema de facturación y cobranza, cuentas por pagar, la nomina, el sistema de
+compras y, por supuesto, el sistema contable.\\
+
+ Para el director general es de suma
+importancia conocer la situación operativa y financiera de la empresa en tiempo real, es
+decir tener información al día de cada una de las unidades de negocio, pues es el quien
+rinde información al consejo administrativo. De aquí que la consolidación de las unidades
+de negocio (oficinas remotas) debe realizarse por lo menos mensualmente.
+El director general reporta cada trimestre al consejo administrativo, en esas reuniones se
+analiza y definen estrategias y políticas a seguir.\\
+
+Para lograr la consolidaciones necesario contar con una infraestructura de comunicación,
+que en este caso consiste en la contratación de líneas privadas con la compañía nacional de
+teléfono, enlaces mediante los cuales Transportes Veracruzanos logro establecer un flujo de
+información entre oficinas remotas y el corporativo.\\
+
+Uno de los problemas que enfrenta la empresa es que sus aplicaciones administrativas
+(sistemas) no operan con el apoyo de un DBMS. Por tanto, la empresa implanto un
+programa para redefinir su plataforma de sistemas en una arquitectura cliente-servidor.
+En cuanto al desarrollo de las aplicaciones existe la disyuntiva de desarrollar los programas
+de escritorio o aplicaciones Web. Existen algunas limitaciones económicas para
+desarrollar el proyecto, pues los presupuestos de ventas de los últimos seis meses no se han
+cumplido.
+
+\end{document}
